@@ -1,0 +1,53 @@
+site_name: "Guide d'utilisateur INDIM@G"
+site_description: "Step-by-step guide"
+edit_uri: edit/main/docs/
+
+nav:
+  - Page d'acceuil: index.md
+  - Installation INDIM@J:
+    - Introduction : installation/index.md
+    - Installation de Firefox : installation/installation Firefox/index.md
+    - Installation de Java : installation/installation Java/index.md
+    - Activation des Popup et exceptions : installation/activation des Popup/index.md
+    - Résolution de problèmes : installation/resolution de problemes/index.md
+  - Renouvelement des certificat : renouvelement certificat/index.md
+  - Tasks:
+      - Example Task: tasks/example-task.md
+
+theme:
+  name: material
+  logo: assets/images/logo.png
+  language: fr 
+  extra_css:
+    - assets/extra.css
+  features:
+    - content.code.copy
+    - navigation.top
+    - search.highlight
+    - navigation.instant
+    - navigation.instant.progress
+  palette:
+    - scheme: default
+      primary: orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    - scheme: slate
+      primary: orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - attr_list
+
+plugins:
+  - search
+  - glightbox
