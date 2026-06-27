@@ -14,12 +14,13 @@ nav:
   - Tasks:
       - Example Task: tasks/example-task.md
 
+extra_css:
+  - assets/extra.css
+
 theme:
   name: material
   logo: assets/images/logo.png
-  language: fr 
-  extra_css:
-    - assets/extra.css
+  language: fr
   features:
     - content.code.copy
     - navigation.top
